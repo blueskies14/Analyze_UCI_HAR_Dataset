@@ -85,8 +85,8 @@ fBodyGyroJerkMag-std() | fBodyGyroJerkMag.std
 
 The activity labels train/y_train.txt and test/y_test.txt are merged as well and added to X_reduced as a new column 'activity'; similarly, the subject id's train/subject_train.txt and test/subject_test.txt are merged and added to X_reduced as a new column 'subject'. The dataset X_reduced contains 68 columns and 10299 rows.
 
-The activity labels are originally in a numeric format, ranging from 1 for walking to 6 for laying. This is changed to a factor with 6 levels describing the activities directly:i 'walking', 'walking_upstairs', 'walking_downstairs', 'sitting', 'standing', and 'laying'.  
+The activity labels are originally in a numeric format, ranging from 1 for walking to 6 for laying. This is changed to a factor with 6 levels describing the activities directly: 'walking', 'walking_upstairs', 'walking_downstairs', 'sitting', 'standing', and 'laying'.  
 
-The script creates a new dataset, newX, which contains the mean of each variable (column) of X_reduced for each activity and subject; this dataset is written out to the file 'mean_subject_activity.txt'
+The script creates a new dataset, newX, which contains the mean of each variable (column) of X_reduced for each activity and subject; this dataset contains 68 columns and 180 rows, each row corresponds to a particular subject and activity. The dataset newX is written out to the file 'mean_subject_activity.txt'
 
 
