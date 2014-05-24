@@ -1,5 +1,5 @@
 # run_analysis.R
-
+-----------------
 This R script takes the data collected from the accelerometers from the Samsung Galaxy S smartphone. The full description of the data is available at the site where the data was obtained:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
@@ -14,12 +14,14 @@ The script merges the training dataset train/X_train.txt and the testing set tes
 
 From the 561 variables originally included in the features (or columns of X), 66 variables that measure the mean and standard deviation of the primary variables are extracted into a new dataset X_reduced. The extracted variables and their column names are:
 
-* tBodyAcc-mean()-X	  tBodyAccX.mean 
-* tBodyAcc-mean()-Y    tBodyAccY.mean 
-* tBodyAcc-mean()-Z    tBodyAccZ.mean
-* tBodyAcc-std()-X	  tBodyAccX.std
-* tBodyAcc-std()-Y	  tBodyAccY.std
-* tBodyAcc-std()-Z	  tBodyAccZ.std
+feature | column name
+:------:|:-----------:
+tBodyAcc-mean()-X | tBodyAccX.mean 
+tBodyAcc-mean()-Y | tBodyAccY.mean 
+tBodyAcc-mean()-Z | tBodyAccZ.mean
+tBodyAcc-std()-X | tBodyAccX.std
+tBodyAcc-std()-Y | tBodyAccY.std
+tBodyAcc-std()-Z | tBodyAccZ.std
 * tGravityAcc-mean()-X tGravityAccX.mean
 * tGravityAcc-mean()-Y tGravityAccY.mean
 * tGravityAcc-mean()-Z tGravityAccZ.mean
